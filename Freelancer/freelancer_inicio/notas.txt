@@ -1,0 +1,8 @@
+Iconos gratis
+https://heroicons.com/
+https://tabler.io/icons
+
+Botones enviar
+Podemos tener botones de enviar con dos sitaxis diferentes:
+    <button type="submit">Enviar</button>
+    <input type="submit" value="Envial">
