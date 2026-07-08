@@ -1,0 +1,58 @@
+:root{
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #FFC107; /* rgba(255,193,7,1); */
+    --secundario: #0097A7;
+    --gris: #757575;
+
+}
+html {
+    font-size: 62.5%;
+    font-family: "Montserrat", sans-serif;
+
+}
+body {
+    font-size: 16px; /* 1rem = 10px */
+}
+
+.titulo {
+    text-align: center;
+    font-size: 3.8rem;
+    font-weight: normal;
+}
+.titulo span {
+    font-size: 2rem;
+}
+.contenedor {
+    width: 120rem;
+    margin: 0 auto;
+}
+.nav-bg {
+    background-color: var(--secundario);
+}
+.navegacion-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+@media (min-width: 768px) {
+   .navegacion-principal {
+    flex-direction: row;
+   }
+}
+.navegacion-principal a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+/* Evento del nav para mostrar el cambio de estado al poner el cursor */
+.navegacion-principal a:hover {
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+
+@media (min-width: 480px) {
+   
+}

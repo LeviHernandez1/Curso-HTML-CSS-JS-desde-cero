@@ -6,3 +6,100 @@ Botones enviar
 Podemos tener botones de enviar con dos sitaxis diferentes:
     <button type="submit">Enviar</button>
     <input type="submit" value="Envial">
+
+CSS 
+    Podemos tener el css en la misma hoja ,html dentro de la etiqueta style como globales dentro del head:
+        <style>
+            h1 {
+                text-align:center;
+                color: red;
+                text-transform: uppercase;
+            }
+        </style>
+    Odesde su propio archivo de CSS
+        Para ligar la hoja css desde el html utilizamos la etiqueta link en el hade 
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Diseñador Freelancer</title>
+                <link rel="stylesheet" href="">
+    Archivo CSS donde se aplicaran las variables por defecto para que 1rem = 10px:
+        html {
+            font-size: 62.5%;
+        }
+        body {
+            font-size: 16px;
+        }
+    
+    Combinacion de propiedades de CSS
+        h1 span {} se aplica solo a la etiqueta que tenga estas dos propiedades juntas en el html
+        .cliente . nombre {} se aplica las propiedades a donde este la class cliente y nombre en el proyecto.
+        Para todos los hijos .cliente > p{} aplica lasm propiedades a todos los parrafos hijos de class cliente
+
+Custom propertis variables o selector seudoelemento para poder guardar variables de CSS
+    :root{
+        --primario: #FFC107;
+    }
+    .titulo {
+        color: var(--primario);
+    }
+Normalize.css
+    https://necolas.github.io/normalize.css/
+
+Margenes
+    .contenedor {
+        width: 120rem;
+        Lo comantenado es lo mismo pero separado por cada lado donde se marcara el margen */
+        margin-top: 0;
+        margin-right: auto;
+        margin-bottom: 0;
+        margin-left: auto;
+        El de abajo es lo mismo pero declarado en una sola linea de codigo
+        margin: 0 auto 0 auto;
+        De esta manera con dos valores es el primero es arriba y abajo y el segundo izquierda y derecha
+        margin: 0 auto;
+        De esta forma con un solo valor es en las 4 direcciones
+        margin: 0;
+    }
+Display
+    Acomoda los elementos en horizontal
+        display: inline;
+    Acomoda los elementos en vertical
+        display: block;
+
+BEM - Bloques, Elementos, Modificadores
+    .card{}
+    .card__titulo{}
+    .card__imgagen{}
+    .card__boton{}
+Utility First utilizado por Tailwind css
+    .text-center{}
+    .color-red-100{}
+    .bg-blue-200{}
+    .p-2{}
+    .m-2{}
+Modulos
+    .card{}
+    .card h2{}
+    .card img{}
+    .card a{}
+
+Responsive Web Design y Media Queries
+    Es un enfoque que nos dice que nuestros diseños deberian 
+    adaptarse a las interacciones del usuario y la resolucion que utilizan.
+
+    Los sitios web deberian adaptarce a celulares, tablets, laptops, computadoras
+    de escrotorio, televisores.
+
+    Esto se logra utilizando Media Queries.
+    @media (min-whith:768px){}
+    @media (min-whith:992px){}
+Configuracion de Snippets
+    comand/shit/p 
+        Configure Snippets
+            css.json
+            - Modificamos antes del cierre de llaves   
+                "Crea un Media Querie": {
+                    "prefix": "mq",
+                    "body": "@media (min-width: $1) {\n   $2\n}"
+                }
