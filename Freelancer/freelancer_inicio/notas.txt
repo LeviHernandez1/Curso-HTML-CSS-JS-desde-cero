@@ -152,3 +152,30 @@ Para alinear contenidos Horizontal y verticamlmente:
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+Gradiente en css 
+https://www.cssmatic.com/box-shadow
+Soporte de css en la Web
+https://caniuse.com/
+
+Flexbox
+    Para alineacion o distribucion de los elementos que estaran dentro de contenedores.
+    Como en encabezados con los nav.
+
+
+Grid
+    Para definir el Layout de tu sitio web, como pueden ser las columnas o contenedores de elementos.
+    Es mucho mejor para diostribuir areas iguales o simetricas.
+        grid-template-columns: 300px 300px;
+        grid-template-rows: 200px 800px;
+        vercion corta:
+            grid: 200px 800px / 300px 300px;
+    Divicion de espacios en fracciones
+        grid-template-columns: 33.33% 33.33% 33.33%;
+        grid-template-columns: 1fr 1fr 1fr;
+        Mas comodo al factorizar solo 3 partes
+        grid-template-columns: repeat(3, 1fr);
+
+Floats
+    Cuando nunca es necesario mover cosas y se mantendran siempre.
+    
