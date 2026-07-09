@@ -1,0 +1,19 @@
+BEM
+Es una metodologia para crear codigo reutilizable y ordenado en los proyectos con CSS.
+Hay que seguir las convenciones de BEM.
+Gracias a estas convenciones se evita la colision de nombres.
+
+    Bloques:
+    Son un Contenedor, si una seccion por si sola es significativa y no requiere de otras
+    secciones para su apariencia (CSS) debera ir en un bloque.
+       <p class="cliente"> ... </p>
+    Elementos:
+    Parte de un bloque, depende del bloque y no es por si solo significativo; tienen la 
+    caracteristica de que utilizan el nombre del bloque y despues doble guion bajo.
+       <p class="cliente__nombre"> ... </p>
+    Modificadores:
+    ¿Un bloque o elemento tendra alguna variante? Se utiliza un modificador que es una 
+    "bandera" que avisa que ese elemento tendra un diseño diferente.
+       <p class="cliente__nombre--ceo"> ... </p>
+
+
