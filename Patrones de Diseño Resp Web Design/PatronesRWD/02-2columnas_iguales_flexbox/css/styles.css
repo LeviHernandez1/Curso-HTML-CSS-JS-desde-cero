@@ -39,3 +39,14 @@ h1 {
 }
 
 /** CODIGO AQUI **/
+@media (min-width: 768px) {
+   .dos-columnas {
+        display: flex;
+        justify-content: space-between;/* Alineacion de flex horizontalmente */
+        /* Al no tener gap se usa flex en el hijo para separar elementos */
+        /* gap: 2rem; */ /* Con gap no se requiere declarar en el hijo por defecto lo agrega */
+    }
+    .entrada-blog {
+        flex: 0 0 calc( 50% - 1rem);
+    }
+}
