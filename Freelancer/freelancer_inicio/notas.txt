@@ -178,4 +178,9 @@ Grid
 
 Floats
     Cuando nunca es necesario mover cosas y se mantendran siempre.
-    
+
+Selecores por tipo de inputs
+    .campo input[type="text"],
+    .campo input[type="tel"] {
+    background-color: red;
+}
