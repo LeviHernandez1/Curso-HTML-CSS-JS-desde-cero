@@ -184,3 +184,25 @@ Selecores por tipo de inputs
     .campo input[type="tel"] {
     background-color: red;
 }
+
+Scroll Snap
+Comportamineto de Scroll para poder escrolear por secciones de la paguina web .
+    Paso 1: Avilitar el html la funcion de scrolear por seccion en el eje que se 
+    desea ya sea en el eje x o el y en el ejemplo es y.
+        html {
+            /* Hack para el scroll */
+            scroll-snap-type: y mandatory;
+        }
+    Posteriormente se asignan las secciones de en que partes de el formulario de aplicaran 
+    los centros y los altos, especificar en el css al identificar ciertas classes definidas en el html.
+    /* Comportamiento de scroll para seccionar hasta donde se mueve el scroll */
+        .navegacion-principal,
+        .servicios,
+        .formulario {
+            scroll-snap-align: center;
+            scroll-snap-stop: always;
+        }
+
+Hosting gratuito para publicar portafolios.
+https://www.netlify.com/
+https://docs.github.com/es/pages
