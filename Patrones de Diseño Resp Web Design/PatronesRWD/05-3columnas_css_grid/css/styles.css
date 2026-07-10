@@ -49,3 +49,22 @@ p {
 
 
 /** CODIGO AQUI **/
+@media (min-width: 768px) {
+   .contenedor-grid {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        /* grid-template-columns: 20% 60% 20%; */
+        grid-auto-flow: column;/* Posicionamiento de columnas disponibles y evitar crear nuevas filas */
+        column-gap: 2rem;
+         /* Posicionamiento por medio de palabras clave */
+         grid-template-areas: "izquierda centro derecha";
+   }
+   .contenido-principal {
+    /* grid-column: 2 / 3; */
+        grid-area: centro;
+   }
+   .aside-1 {
+        /* grid-column: 1 / 2; */
+        grid-column: izquierda;
+   }
+}
