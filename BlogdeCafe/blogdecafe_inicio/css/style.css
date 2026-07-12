@@ -93,14 +93,17 @@ img {
     font-weight: 700;
     margin-bottom: 2rem;
 }
+
 @media (min-width: 768px) {
-   .boton {
+    .boton {
         display: inline-block;
-   }
+    }
 }
+
 .boton--primario {
     background-color: var(--negro);
 }
+
 .boton--secundario {
     background-color: var(--primario);
 }
@@ -128,9 +131,11 @@ img {
         margin-top: 10rem;
     }
 }
+
 .barra {
     padding-top: 3rem;
 }
+
 @media (min-width: 768px) {
     .barra {
         display: flex;
@@ -169,43 +174,78 @@ img {
 }
 
 @media (min-width: 768px) {
-   .contenido-principal {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    column-gap: 4rem;
-   }
+    .contenido-principal {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
 }
 
-.entrada{
+.entrada {
     border-bottom: 1px solid var(--gris);
     margin-bottom: 2rem;
 }
+
 /* Para deseleccional el utltino elemento y quitarle propiedades en este caso el margen */
 .entrada:last-of-type {
     border: none;
     margin-bottom: 0;
 }
+
 .cursos {
     list-style: none;
 }
+
 .widget-curso {
     border-bottom: 1px solid var(--gris);
     margin-bottom: 2rem;
 }
+
 .widget-curso:last-of-type {
     border: none;
     margin-bottom: 0;
 }
+
 .widget-curso__label {
     font-family: var(--fuenteHeading);
     font-weight: bold;
 }
+
 .widget-curso__info {
     font-weight: normal;
 }
+
 /* Footer */
 .footer {
     background-color: var(--negro);
     padding-bottom: 3rem;
     margin-top: 4rem;
+}
+
+/* Sobre Nosotros */
+@media (min-width: 768px) {
+    .sobre-nosotros {
+        display: flex;
+        /* Para separar elementos de flex entre ellos podemos utilizar gap o space-between */
+        /* gap: 2rem; */
+        justify-content: space-between;
+    }
+    .sobre-nosotros__texto {
+        /* Propiedad flex que toma tres valores */
+        flex: 0 0 calc(50% - 1rem);
+    }
+    .sobre-nosotros__imagen {
+        flex: 0 0 calc(50% - 1rem);
+    }
+    /* .sobre-nosotros__imagen,
+    .sobre-nosotros__texto {
+        flex-basis: calc(50% - 1rem);
+    } */
+
+    /* Logrando lo mismo con grid con menos lineas de codigo */
+    /* .sobre-nosotros {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+   } */
 }
