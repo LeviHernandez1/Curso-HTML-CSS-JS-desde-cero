@@ -31,6 +31,8 @@ body {
 .contenedor {
     max-width: 120rem;
     width: 90%;
+    /* Tambien podemos usar esto con lo nuevo de css declrando los dos maximos en una linea */
+    width: min(90%, 120rem);
     margin: 0 auto;
     /* Centrar el contendido horizontalmente */
 }
@@ -126,7 +128,9 @@ img {
         margin-top: 10rem;
     }
 }
-
+.barra {
+    padding-top: 3rem;
+}
 @media (min-width: 768px) {
     .barra {
         display: flex;
@@ -202,12 +206,6 @@ img {
 /* Footer */
 .footer {
     background-color: var(--negro);
-    color: var(--blanco);
-}
-.footer__contenedor {
-    text-align: center;
-}
-.footer__navegacion {
-    display: flex;
-    flex-direction: column;
+    padding-bottom: 3rem;
+    margin-top: 4rem;
 }
