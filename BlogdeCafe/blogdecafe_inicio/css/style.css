@@ -157,7 +157,6 @@ img {
 }
 
 /* Navegacion */
-.navegacion {}
 
 @media (min-width: 768px) {
     .navegacion {
@@ -215,6 +214,11 @@ img {
     font-weight: normal;
 }
 
+.widget-curso__label,
+.widget-curso__info {
+    font-size: 2rem;
+}
+
 /* Footer */
 .footer {
     background-color: var(--negro);
@@ -248,4 +252,36 @@ img {
         grid-template-columns: repeat(2, 1fr);
         column-gap: 2rem;
    } */
+}
+
+/* Cursos */
+
+.curso {
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--gris);
+}
+.curso:last-of-type {
+    border: none;
+}
+@media (min-width: 768px) {
+   .curso {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 2rem;
+   }
+}
+
+.curso__label {
+    font-family: var(--fuenteHeading);
+    font-weight: bold;
+}
+
+.curso__info {
+    font-weight: normal;
+}
+
+.curso__label,
+.curso__info,
+.curso__descripcion {
+    font-size: 2rem;
 }
