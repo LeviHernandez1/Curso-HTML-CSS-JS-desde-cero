@@ -3,6 +3,7 @@
     --fuenteHeading: "PT Sans", sans-serif;
 
     --primario: #784D3C;
+    --gris: #e1e1e1;
     --blanco: #ffffff;
     --negro: #000000;
 }
@@ -43,6 +44,7 @@ h2,
 h3,
 h4 {
     font-family: var(--fuenteHeading);
+    line-height: 1.2;
 }
 
 h1 {
@@ -76,6 +78,29 @@ img {
 
 .centrar-texto {
     text-align: center;
+}
+
+.boton {
+    display: block;
+    font-family: var(--fuenteHeading);
+    color: var(--blanco);
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+   .boton {
+        display: inline-block;
+   }
+}
+.boton--primario {
+    background-color: var(--negro);
+}
+.boton--secundario {
+    background-color: var(--primario);
 }
 
 /* Header */
@@ -137,4 +162,52 @@ img {
     text-align: center;
     font-size: 1.8rem;
     color: var(--blanco);
+}
+
+@media (min-width: 768px) {
+   .contenido-principal {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 4rem;
+   }
+}
+
+.entrada{
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+}
+/* Para deseleccional el utltino elemento y quitarle propiedades en este caso el margen */
+.entrada:last-of-type {
+    border: none;
+    margin-bottom: 0;
+}
+.cursos {
+    list-style: none;
+}
+.widget-curso {
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+}
+.widget-curso:last-of-type {
+    border: none;
+    margin-bottom: 0;
+}
+.widget-curso__label {
+    font-family: var(--fuenteHeading);
+    font-weight: bold;
+}
+.widget-curso__info {
+    font-weight: normal;
+}
+/* Footer */
+.footer {
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+.footer__contenedor {
+    text-align: center;
+}
+.footer__navegacion {
+    display: flex;
+    flex-direction: column;
 }
