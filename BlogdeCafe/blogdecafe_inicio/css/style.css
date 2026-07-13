@@ -285,3 +285,12 @@ img {
 .curso__descripcion {
     font-size: 2rem;
 }
+
+.entrada{
+    display: flex;
+    flex-direction: column;
+}
+.entrada h3,
+.entrada h4  {
+    text-align: center;
+}
