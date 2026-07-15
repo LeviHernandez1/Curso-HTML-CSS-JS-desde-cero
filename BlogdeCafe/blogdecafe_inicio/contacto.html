@@ -5,11 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BlogDeCafé</title>
+    <meta name="description" content="Página web de blog de café">
+    <!-- Prefetch -->
+     <!-- Se cargaran las paginas que son necesariamente mas requeridas ya que podemos cargarlas mas rapido al momento de cargar esta  -->
+     <link rel="prefetch" href="nosotros.html" as="document">
+    
+    <!-- Preload -->
+     <!-- Lo primero que se debe cargar antes de cargar la pagina -->
+    <link rel="preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        crossorigin="crossorigin" as="font">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+        crossorigin="crossorigin" as="font">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preload" href="img/blog1.jpg" as="image">
 </head>
 
 <body>
@@ -86,6 +104,7 @@
                 </nav>
             </div>
     </footer>
+    <script src="js/modernizr.js"></script>
 </body>
 
 </html>
